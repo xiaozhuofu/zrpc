@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zrpc-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zrpc-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zrpc-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zrpc-protocol" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zrpc-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zrpc-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zrpc-registry" charset="UTF-8" />
+  </component>
+</project>
