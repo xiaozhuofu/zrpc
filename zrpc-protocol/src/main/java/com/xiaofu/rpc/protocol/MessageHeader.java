@@ -26,6 +26,7 @@ public class MessageHeader implements Serializable {
     private byte serialization;
     private byte msgType;
     private byte status;
+    private long msgId;
     private int msgLength;
 }
 

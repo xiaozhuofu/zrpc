@@ -9,6 +9,10 @@ import lombok.Getter;
  */
 public enum RpcSerializationTypeEnum {
 
+    HESSIAN(1),
+    PROTOBUF(2);
+
+
     @Getter
     private int type;
 
@@ -16,6 +20,19 @@ public enum RpcSerializationTypeEnum {
         this.type = type;
     }
 
-
+    /**
+     * 根据类型字段，获得对应的枚举
+     * @param type
+     * @return
+     */
+    public static RpcSerializationTypeEnum findByType(int type){
+        for (RpcSerializationTypeEnum typeEnum : RpcSerializationTypeEnum.values()) {
+            if (typeEnum.getType() == type){
+                return typeEnum;
+            }
+        }
+        //框架默认采用的序列化算法为HESSIAN
+        return HESSIAN;
+    }
 
 }
