@@ -12,6 +12,9 @@ import com.xiaofu.rpc.impl.ZookeeperRegistryServiceImpl;
  */
 public class RegistryServiceFactory {
 
+    /**
+     * 注册中心实例
+     */
     private static volatile RegistryService registryService;
 
     /**
