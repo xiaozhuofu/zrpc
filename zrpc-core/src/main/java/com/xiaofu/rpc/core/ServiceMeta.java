@@ -31,7 +31,7 @@ public class ServiceMeta implements Serializable {
     /**
      * 服务端口
      */
-    private String servicePort;
+    private Integer servicePort;
 
 
 }
