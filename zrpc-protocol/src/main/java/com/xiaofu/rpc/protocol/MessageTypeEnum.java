@@ -4,7 +4,7 @@ import lombok.Getter;
 
 /**
  * @author xiaofu
- * @Description TODO 定义消息类型
+ * @Description  定义消息类型
  * @Date: 2021/4/19 16:35
  */
 public enum MessageTypeEnum {

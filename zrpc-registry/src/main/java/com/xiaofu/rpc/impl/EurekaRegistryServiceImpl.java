@@ -5,7 +5,7 @@ import com.xiaofu.rpc.core.ServiceMeta;
 
 /**
  * @author xiaofu
- * @Description TODO 基于Eureka实现的服务注册中心实现类
+ * @Description  基于Eureka实现的服务注册中心实现类
  * @Date: 2021/4/20 16:24
  */
 public class EurekaRegistryServiceImpl implements RegistryService {

@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * @author xiaofu
- * @Description TODO 封装客户端给服务端发送的远程调用请求信息
+ * @Description  封装客户端给服务端发送的远程调用请求信息
  * @createTime 2021年04月17日 19:14:00
  */
 @Data

@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * @author xiaofu
- * @Description TODO 分装服务端的响应信息
+ * @Description  分装服务端的响应信息
  * 响应存在两种可能
  * 1、成功->data
  * 2、失败->message

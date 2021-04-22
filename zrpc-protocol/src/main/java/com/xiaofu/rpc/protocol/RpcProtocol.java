@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * @author xiaofu
- * @Description TODO 协议包完整类
+ * @Description  协议包完整类
  * @Date: 2021/4/19 16:49
  */
 @Data

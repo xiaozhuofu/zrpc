@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * @author xiaofu
- * @Description TODO 服务的元信息
+ * @Description  服务的元信息
  * 我们将服务发布到注册中心，用来描述当前服务状态的
  * @createTime 2021年04月17日 19:23:00
  */

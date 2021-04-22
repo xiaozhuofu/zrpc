@@ -6,7 +6,7 @@ import com.xiaofu.rpc.serialization.impl.HessianSerializationImpl;
 
 /**
  * @author xiaofu
- * @Description TODO 序列化工厂类，根据协议头部的序列化类型字段，返回具体的序列化实现类
+ * @Description  序列化工厂类，根据协议头部的序列化类型字段，返回具体的序列化实现类
  * @Date: 2021/4/19 17:40
  */
 public class RpcSerializationFactory {

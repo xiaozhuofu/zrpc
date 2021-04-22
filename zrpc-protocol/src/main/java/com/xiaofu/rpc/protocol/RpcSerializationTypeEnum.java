@@ -4,7 +4,7 @@ import lombok.Getter;
 
 /**
  * @author xiaofu
- * @Description TODO
+ * @Description
  * @createTime 2021年04月18日 17:19:00
  */
 public enum RpcSerializationTypeEnum {
