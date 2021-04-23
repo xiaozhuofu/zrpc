@@ -1,19 +1,15 @@
-package com.xiaofu.rpc.provider;
+package com.xiaofu.rpc.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author xiaofu
- * @Description
- * @Date: 2021/4/22 14:48
+ * @Date: 2021/4/23 14:56
  */
 @SpringBootApplication
-public class ProviderApplication {
-
+public class ConsumerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ProviderApplication.class,args);
+        SpringApplication.run(ConsumerApplication.class,args);
     }
-
-
 }

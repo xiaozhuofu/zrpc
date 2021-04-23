@@ -7,6 +7,7 @@ import com.xiaofu.rpc.core.RpcUtils;
 import com.xiaofu.rpc.core.ServiceMeta;
 import com.xiaofu.rpc.provider.annotation.RpcService;
 import com.xiaofu.rpc.provider.cache.LocalCache;
+import com.xiaofu.rpc.provider.handler.RpcRequestHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -22,7 +23,7 @@ import java.net.UnknownHostException;
 
 /**
  * @author xiaofu
- * 1、启动本地服务
+ * 1、启动本地服务[开启对客户端的监听]
  * 2、将服务发布到注册中心
  * @Date: 2021/4/22 15:25
  */
@@ -50,6 +51,7 @@ public class RpcProvider implements InitializingBean, BeanPostProcessor {
 
     /**
      * 容器扩展点
+     * afterPropertiesSet方法，初始化bean的时候执行，可以针对某个具体的bean进行配置
      * 基于容器扩展点，实现服务的发布启动
      * @throws Exception
      */
@@ -86,8 +88,7 @@ public class RpcProvider implements InitializingBean, BeanPostProcessor {
                         pipeline.addLast(new RpcEncoder());
                         pipeline.addLast(new RpcDecoder());
                         //添加自定义处理器，处理客户端的请求
-                        // 自定义handler处理逻辑部分待补充
-                        pipeline.addLast(null);
+                        pipeline.addLast(new RpcRequestHandler());
                     }
 
                 })
@@ -106,6 +107,7 @@ public class RpcProvider implements InitializingBean, BeanPostProcessor {
 
     /**
      * 执行时机：bean完成初始化之后
+     * postProcessAfterInitialization方法在bean初始化之后执行
      * @param bean
      * @param beanName
      * @return

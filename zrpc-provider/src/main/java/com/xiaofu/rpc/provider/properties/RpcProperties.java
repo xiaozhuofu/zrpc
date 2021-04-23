@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
  */
 @Data
 @ConfigurationProperties(prefix = "zrpc")
-@Component
 public class RpcProperties {
 
     private String registryType;
