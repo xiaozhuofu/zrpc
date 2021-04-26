@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author xiaofu
  * @Date: 2021/4/23 14:56
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.xiaofu.rpc.consumer")
 public class ConsumerApplication {
     public static void main(String[] args) {
         SpringApplication.run(ConsumerApplication.class,args);

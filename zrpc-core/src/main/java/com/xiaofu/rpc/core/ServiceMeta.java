@@ -24,7 +24,7 @@ public class ServiceMeta implements Serializable {
     private String version;
 
     /**
-     * 服务地址
+     * 服务ip地址
      */
     private String serviceAddr;
 

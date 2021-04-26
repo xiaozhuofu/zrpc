@@ -17,6 +17,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -28,7 +30,12 @@ import java.net.UnknownHostException;
  * @Date: 2021/4/22 15:25
  */
 @Slf4j
-public class RpcProvider implements InitializingBean, BeanPostProcessor {
+public class RpcProvider implements InitializingBean, BeanPostProcessor{
+
+
+
+
+
 
 
     private RegistryService registryService;
@@ -42,6 +49,8 @@ public class RpcProvider implements InitializingBean, BeanPostProcessor {
      * 服务发布的地址
      */
     private String serverAddr;
+
+
 
 
     public RpcProvider(RegistryService registryService, Integer servicePort) {
@@ -139,6 +148,8 @@ public class RpcProvider implements InitializingBean, BeanPostProcessor {
         }
         return null;
     }
+
+
 }
 
 
