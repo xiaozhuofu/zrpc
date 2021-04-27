@@ -95,8 +95,8 @@ public class RpcProvider implements InitializingBean, BeanPostProcessor{
                 })
                 .childOption(ChannelOption.SO_KEEPALIVE,true);
         try {
-            ChannelFuture future = serverBootstrap.bind(serverAddr, servicePort).sync();
-            log.info("server start on {}:{}",serverAddr,servicePort);
+            ChannelFuture future = serverBootstrap.bind(this.serverAddr, this.servicePort).sync();
+            log.info("server start on {}:{}",this.serverAddr,this.servicePort);
             future.channel().closeFuture().sync();
         } catch (InterruptedException e) {
             e.printStackTrace();

@@ -54,10 +54,9 @@ public class RpcRequestHandler extends SimpleChannelInboundHandler<RpcProtocol<R
             rpcProtocol.setBody(response);
             //给客户端返回处理结果
             channelHandlerContext.writeAndFlush(rpcProtocol);
-
         });
-
     }
+
 
     /**
      * 根据客户端的请求信息，调用对应的服务方法，并返回结果
