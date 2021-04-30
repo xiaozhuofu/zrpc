@@ -21,6 +21,8 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author xiaofu
+ * //内部会对带有@RpcReference注解的属性进行bean的实例化
+ * //->RpcReferenceBean
  * @Date: 2021/4/26 10:57
  */
 @Component

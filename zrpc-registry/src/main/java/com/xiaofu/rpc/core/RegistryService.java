@@ -16,14 +16,14 @@ public interface RegistryService {
      * @param serviceMeta 服务元数据信息
      * @throws Exception
      */
-    public void register(ServiceMeta serviceMeta) throws Exception;
+    void register(ServiceMeta serviceMeta) throws Exception;
 
     /**
      * 服务注销
      * @param serviceMeta 服务元数据信息
      * @throws Exception
      */
-    public void unRegister(ServiceMeta serviceMeta) throws Exception;
+    void unRegister(ServiceMeta serviceMeta) throws Exception;
 
 
     /**
@@ -33,7 +33,7 @@ public interface RegistryService {
      * @return
      * @throws Exception
      */
-    public ServiceMeta discovery(String serviceKey,int hashcode) throws Exception;
+    ServiceMeta discovery(String serviceKey,int hashcode) throws Exception;
 
 }
 

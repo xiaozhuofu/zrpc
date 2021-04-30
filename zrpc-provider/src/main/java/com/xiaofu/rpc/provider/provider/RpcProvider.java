@@ -51,7 +51,7 @@ public class RpcProvider implements InitializingBean, BeanPostProcessor{
     }
 
     /**
-     * 容器扩展点
+     * 容器扩展点【启动服务】
      * afterPropertiesSet方法，初始化bean的时候执行，可以针对某个具体的bean进行配置,必须实现 InitializingBean接口
      * 基于容器扩展点，实现服务的发布启动
      * @throws Exception
@@ -107,6 +107,7 @@ public class RpcProvider implements InitializingBean, BeanPostProcessor{
     }
 
     /**
+     * 注册服务：所有的bean完成初始化之后，扫描Bean是否包含了@RpcService注解
      * 执行时机：bean完成初始化之后
      * postProcessAfterInitialization方法在bean初始化之后执行
      * @param bean

@@ -8,6 +8,6 @@ package com.xiaofu.rpc;
  */
 public interface UserService {
 
-    public String hello();
+    String hello();
 
 }
