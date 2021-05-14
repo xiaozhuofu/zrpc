@@ -22,5 +22,9 @@ zrpc<br/>
 3、zrpc-registry:注册中心模块，实现服务注册及发现的功能，负载均衡的功能  
 4、zrpc-provider:服务提供者模块，负责发布RPC服务，处理RPC请求  
 5、zrpc-consumer:服务消费者模块，负责实现远程调用  
-#### 2.3 各个模块的依赖关系图
+### 2.3 各个模块的依赖关系图
 ![](https://github.com/xiaozhuofu/zrpc/blob/master/images/2-%E6%A8%A1%E5%9D%97%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%9B%BE.png)
+## 3.项目模块
+### 3.1 zrpc-core
+#### 1.导入依赖
+netty+lombok
